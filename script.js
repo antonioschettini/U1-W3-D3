@@ -26,8 +26,9 @@ const elimina = function (e) {
 const spuntaFatto = function (e) {
   const button = e.target;
   const sbarraTesto = button.parentElement;
-  sbarraTesto.style.textDecoration = "line-through";
-  sbarraTesto.style.opacity = "0.5";
+  const p = sbarraTesto.querySelector("p");
+  p.style.textDecoration = "line-through";
+  p.style.opacity = "0.5";
 };
 
 const form = document.getElementById("form");
